@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="fabiano">
+    <title>Radar da Inovação Institucional</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/dc.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <h5 class="my-0 mr-md-auto font-weight-normal"> <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          <i class="bi bi-speedometer mr-2" width="40" height="22"></i>
+          
+          <span class="fs-4">Avaliação da Cultura da Inovação UFOPA</span>
+        </a></h5>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+              <a class="p-2 text-dark" href="#">Referências</a>
+              <a class="p-2 text-dark" type="button" data-toggle="modal" data-target="#modalajuda">Ajuda</a>
+              <a class="btn btn-outline-primary" href="#">Ver Artigo</a>
+            </div>
+        </div>
+    </nav>
+      <!-- Modal -->
+      <div class="modal fade" id="modalajuda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Informações</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              escrever aqui informacoes como contato e talz...
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron">
+        <div class="container d-flex flex-column flex-md-row">
+          <div class="col-12 col-md-8">
+          <h1 class="display-3">Bem vindo</h1>
+          <p>A Avaliação da Cultura de Inovação mede a maturidade do desenvolvimento de uma instituição o caminho rumo à inovação.<p>A mensuração realiza um diagnóstico dos pontos fortes e das lacunas da instituição, e oferece uma orientação aos gestoes para tomarem medidas concretas com o fim de criarem e melhorarem uma cultura de inovação.
+
+            Esta avaliação consiste em 54 perguntas fechadas e uma avaliação final. </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div id="radarChart" class="pb-2 d-flex justify-content-center"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center p-5">
+        <h3>Explore os dados</h>
+        <p class="lead text-muted">Um estudo com base nas dimensôes de inovação foi aplicado na instituição visando mensurar a qualidade da cultura da inovação. Agora você pode explorar esses dados e conhecer o atual estado que nossa instituição</p>
+      </div>
+      <hr>
+      <div class="row g-5 py-5">
+        <div class="feature col-md-4">
+          <div id="chart-ring-year" class="pb-2 d-flex justify-content-center chart-v-align"></div>
+          <h5>Ano</h5>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+        </div>
+        <div class="feature col-md-4">
+          <div id="chart-row-setores" class="pb-2 d-flex justify-content-center chart-v-align"></div>
+          <h5>Setores</h5>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+        </div>        
+        <div class="feature col-md-4">
+          <div id="radarChartSetores" class="pb-2 d-flex justify-content-center"></div>    
+          <h5>Dimensões</h5>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+        </div>    
+      </div>
+      <hr>
+      <h3 class="text-center">Quantitativo por Dimensões</h5>
+      <div class="row g-5 py-5">
+        <div class="feature col-md-4">
+          <div id="chart-row-lid" class="pb-2 d-flex justify-content-center"></div>
+          <h5>Liderança</h5>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+        </div>
+        <div class="feature col-md-4">
+          <div id="chart-row-cul" class="pb-2 d-flex justify-content-center"></div>
+          <h5>Cultura</h5>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+        </div>        
+        <div class="feature col-md-4">
+          <div id="chart-row-inf" class="pb-2 d-flex justify-content-center"></div>
+          <h5>Estratégia</h5>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+          
+        </div>
+      </div>
+        <div class="row g-5 py-5">
+          <div class="feature col-md-4">
+            <div id="chart-row-est" class="pb-2 d-flex justify-content-center"></div>
+            <h5>Estrutura</h5>
+            <p>
+              Paragraph of text beneath the heading to explain the heading. We'll
+              add onto it with another sentence and probably just keep going until
+              we run out of words.
+            </p>
+          </div>
+          <div class="feature col-md-4">
+            <div id="chart-row-rel" class="pb-2 d-flex justify-content-center"></div>
+            <h5>Relacionamento</h5>
+            <p>
+              Paragraph of text beneath the heading to explain the heading. We'll
+              add onto it with another sentence and probably just keep going until
+              we run out of words.
+            </p>
+          </div>
+          <div class="feature col-md-4">
+            <div id="chart-row-pes" class="pb-2 d-flex justify-content-center"></div>
+            <h5>Pessoas</h5>
+            <p>
+              Paragraph of text beneath the heading to explain the heading. We'll
+              add onto it with another sentence and probably just keep going until
+              we run out of words.
+            </p>
+            
+          </div>
+      </div>
+      <hr>
+      <h3 class="text-center">Quantitativo por Gênero</h5>
+      <div class="row g-5 py-5">
+        <div class="feature col-md-6">
+          <div id="chart-row-fem" class="pb-2 d-flex justify-content-center"></div>
+          <h5>Mulheres</h5>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+        </div>
+        <div class="feature col-md-6">
+          <div id="chart-row-mas" class="pb-2 d-flex justify-content-center"></div>
+          <h5>Homens</h5>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll
+            add onto it with another sentence and probably just keep going until
+            we run out of words.
+          </p>
+        </div>
+    </div>
+      <hr>
+      <div class="container text-center p-5">
+        <h2>Evolução da Inovação</h2>
+        <p class=" text-muted">É importante entender que os aspectos ligados à inovação, devem evoluir de maneira harmoniosa, para que o resultado final aconteça de forma eficiente. A eficiência da gestão da inovação será alcançado pela melhoria contínua e harmoniosa de cada uma destas dimensões.</p>
+      </div>
+
+      <hr>
+      <footer class=" text-muted text-center text-small">
+        <p class="mb-1">© 2020-2021 Radar da Inovação Insitucional</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="http://www.ufopa.edu.br/ufopa/">UFOPA</a></li>
+          <li class="list-inline-item"><a href="http://www.ufopa.edu.br/ait/">AIT</a></li>
+          <li class="list-inline-item"><a href="http://www.profnit.org.br/pt/sample-page/">PROFNIT</a></li>
+        </ul>
+      </footer>
+
+      <script type="text/javascript"src="js/jquery-3.5.1.slim.min.js"></script>
+      <script type="text/javascript"src="js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="js/d3.js"></script>
+      <script type="text/javascript" src="js/radar-chart.js"></script>     
+      <script type="text/javascript" src="js/crossfilter.js"></script>
+      <script type="text/javascript" src="js/dc.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+    </div>
+  </body>
+</html>
