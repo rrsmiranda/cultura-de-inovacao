@@ -59,18 +59,18 @@ infRowChart = new dc.RowChart("#chart-row-inf");
 
 // use static or load via d3.csv("spendData.csv").then(function(spendData) {/* do stuff */});
 var spendData = [
-{ name: "Setor1", Spent: "$40", Year: 2020, Fem: 34, Mas:50, Cul: 100, rel: 30, lid:50, est: 100, pes: 30, inf: 60,
+{ name: "PROGEP", Spent: "$40", Year: 2020, Fem: 34, Mas:50, Cul: 100, rel: 30, lid:50, est: 100, pes: 30, inf: 60,
   axes: [{axis: 'Clima', value: 10}, {axis: 'Sucesso', value: 50}, {axis: 'Recursos', value: 50}, 
         {axis: 'Comportamentos', value: 20}, {axis: 'Valores', value: 30}, {axis: 'Processos', value: 110}]},
-{ name: "Setor2", Spent: "$10", Year: 2021, Fem: 17, Mas:30, Cul: 20, rel: 45, lid:10, est: 70, pes: 70, inf: 50,
-  axes: [{axis: 'Cultura', value: 30}, {axis: 'Liderança', value: 20}, {axis: 'Pessoas', value: 80}, 
-        {axis: 'Estrutura', value: 10}, {axis: 'Estratégia', value: 100}, {axis: 'Relacionamento', value: 30}]},
-{ name: "Setor3", Spent: "$100", Year: 2020, Fem: 20, Mas:40, Cul: 70, rel: 10, lid:80, est: 40, pes: 60, inf: 90,
-  axes: [{axis: 'Cultura', value: 20}, {axis: 'Liderança', value: 60}, {axis: 'Pessoas', value: 60}, 
-        {axis: 'Estrutura', value: 60}, {axis: 'Estratégia', value: 50}, {axis: 'Relacionamento', value: 70}]},
-{ name: "Setor4", Spent: "$20", Year: 2021, Fem: 10, Mas:25, Cul: 80, rel: 50, lid:30, est: 90, pes: 40, inf: 20,
-  axes: [{axis: 'Cultura', value: 60}, {axis: 'Liderança', value: 90}, {axis: 'Pessoas', value: 20}, 
-        {axis: 'Estrutura', value: 90}, {axis: 'Estratégia', value: 10}, {axis: 'Relacionamento', value: 50}]}
+{ name: "PROPPIT", Spent: "$10", Year: 2021, Fem: 17, Mas:30, Cul: 20, rel: 45, lid:10, est: 70, pes: 70, inf: 50,
+  axes: [{axis: 'Clima', value: 30}, {axis: 'Sucesso', value: 20}, {axis: 'Recursos', value: 80}, 
+        {axis: 'Comportamentos', value: 10}, {axis: 'Valores', value: 100}, {axis: 'Processos', value: 30}]},
+{ name: "PROPLAN", Spent: "$100", Year: 2020, Fem: 20, Mas:40, Cul: 70, rel: 10, lid:80, est: 40, pes: 60, inf: 90,
+  axes: [{axis: 'Clima', value: 20}, {axis: 'Sucesso', value: 60}, {axis: 'Recursos', value: 60}, 
+        {axis: 'Comportamentos', value: 60}, {axis: 'Valores', value: 50}, {axis: 'Processos', value: 70}]},
+{ name: "PROEN", Spent: "$20", Year: 2021, Fem: 10, Mas:25, Cul: 80, rel: 50, lid:30, est: 90, pes: 40, inf: 20,
+  axes: [{axis: 'Clima', value: 60}, {axis: 'Sucesso', value: 90}, {axis: 'Recursos', value: 20}, 
+        {axis: 'Comportamentos', value: 90}, {axis: 'Valores', value: 10}, {axis: 'Processos', value: 50}]}
 ];
 
 // normalizando/parse dados
